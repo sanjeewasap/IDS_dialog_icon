@@ -1,0 +1,44 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/lib",
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "types": [
+      "jasmine",
+      "jquery",
+      "node",
+      "ids-enterprise-typings"
+    ],
+    "lib": [
+      "dom",
+      "es2018"
+    ],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": false,
+    "strictInputAccessModifiers": false,
+    "strictTemplates": false,
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "fullTemplateTypeCheck": true,
+    "enableResourceInlining": true,
+    "enableIvy": true
+  },
+  "exclude": [
+    "**/node_modules/**",
+    "dist",
+    "src/test.ts",
+    "**/*.spec.ts"
+  ]
+}

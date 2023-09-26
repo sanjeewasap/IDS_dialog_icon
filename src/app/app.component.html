@@ -1,0 +1,14 @@
+<a href="#maincontent" class="skip-link" data-translate="text">SkipToMain</a>
+
+<soho-icons *ngIf="!useNewIcons"></soho-icons>
+<soho-icons-new *ngIf="useNewIcons"></soho-icons-new>
+<soho-icons-empty [icons]="useNewIcons ? 'colorful' : 'classic'"></soho-icons-empty>
+<soho-icons-app></soho-icons-app>
+
+<app-header-dynamic-demo
+    (appMenuTriggerClick)="toggleMenuVisibility()"></app-header-dynamic-demo>
+<div id="maincontent" class="page-container scrollable" role="main">
+  <app-message-demo></app-message-demo>
+</div>
+
+<div soho-personalize (changetheme)="onChangeTheme($event)"></div>

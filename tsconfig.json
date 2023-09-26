@@ -1,0 +1,53 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "target": "ES2022",
+    "module": "es2020",
+    "typeRoots": [
+      "node_modules/@types",
+      "./dist"
+    ],
+    "types": [
+      "jasmine",
+      "jquery",
+      "node",
+      "ids-enterprise-typings"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "paths": {
+      "ids-enterprise-ng": [
+        "dist/ids-enterprise-ng/ids-enterprise-ng",
+        "dist/ids-enterprise-ng"
+      ],
+      "ids-enterprise-ng/*": [
+        "dist/ids-enterprise-ng/*"
+      ]
+    },
+    "useDefineForClassFields": false
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": false,
+    "strictInputAccessModifiers": false,
+    "strictTemplates": false
+  },
+  "exclude": [
+    "dist/**"
+  ]
+}
